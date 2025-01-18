@@ -9,23 +9,29 @@
 Моя специализация включает в себя создание различных видов сайтов и приложений, в том числе платежных систем, социальных сетей, информационно-познавательных и развлекательных ресурсов, а также других интересных проектов.
 
 **Фреймворки и библиотеки**
+
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=flat-square) ![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?logo=vue.js&logoColor=white&style=flat-square) ![Next.js](https://img.shields.io/badge/-Next.js-000000?logo=next.js&logoColor=white&style=flat-square)
 
 **Языки и препроцессоры**
+
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square) ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square)
 ![Less](https://img.shields.io/badge/-Less-1D365D?logo=less&logoColor=white&style=flat-square) ![SCSS](https://img.shields.io/badge/-SCSS-CC6699?logo=sass&logoColor=white&style=flat-square) ![Pug](https://img.shields.io/badge/-Pug-A86454?logo=pug&logoColor=white&style=flat-square)
 
 **Сетевые технологии**
+
 ![Axios](https://img.shields.io/badge/-Axios-5A29E4?logo=axios&logoColor=white&style=flat-square) ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?logo=graphql&logoColor=white&style=flat-square) ![REST API](https://img.shields.io/badge/-REST%20API-FF6C37?style=flat-square) ![WebSocket](https://img.shields.io/badge/-WebSocket-00C853?logo=websocket&logoColor=white&style=flat-square)
 
 **Состояние и управление**
+
 ![MobX](https://img.shields.io/badge/-MobX-FF9955?logo=mobx&logoColor=white&style=flat-square) ![Redux](https://img.shields.io/badge/-Redux-764ABC?logo=redux&logoColor=white&style=flat-square) ![Redux-Saga](https://img.shields.io/badge/-Redux--Saga-999999?logo=redux-saga&logoColor=white&style=flat-square) ![Pinia](https://img.shields.io/badge/-Pinia-FFCC33?logo=vue.js&logoColor=white&style=flat-square)
 
 **Сборка и инфраструктура**
+
 ![Webpack](https://img.shields.io/badge/-Webpack-8DD6F9?logo=webpack&logoColor=black&style=flat-square) ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white&style=flat-square)
 ![Vite](https://img.shields.io/badge/Vite-purple?style=flat-square&logo=vite)
 
 **Тестирование**
+
 ![Jest](https://img.shields.io/badge/-Jest-C21325?logo=jest&logoColor=white&style=flat-square)
 
 ## Вклад в проекты компаний
