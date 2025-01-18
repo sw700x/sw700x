@@ -42,10 +42,10 @@
 
 Несколько коммерческих проектов которые демонстрируют мои профессиональные навыки:
 
-[Zakroma-presentation](./zakroma-presentation/README.md)
-[2tip (текущий)](./2tip/README.md)
-[2tip (новый)](./2tip/README.md)
-[CoshKey 2.0](./CoshKey2.0/README.md)
+- [Zakroma-presentation](./zakroma-presentation/README.md)
+- [2tip (текущий)](./2tip/README.md)
+- [2tip (новый)](./2tip/README.md)
+- [CoshKey 2.0](./CoshKey2.0/README.md)
 
 Мой вклад в организацию работы компании:
 
@@ -70,4 +70,5 @@
 ## Связаться со мной:
 
 E-mail: [sw700x@gmail.com](mailto:sw700x@gmail.com)
+
 Telegram: [@sw700x](https://t.me/sw700x)
