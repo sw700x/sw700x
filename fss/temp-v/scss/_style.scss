@@ -1,0 +1,20 @@
+@use "./abstracts/_variables" as vars;
+
+.section-test {
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: vars.$gap-24-48;
+
+    .list-v,
+    .list-h {
+      display: flex;
+      flex-wrap: wrap;
+      gap: vars.$gap-12-24;
+    }
+
+    .list-v {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+extends ../layouts/_base.pug
+
+block title
+	title= pages.test.fullTitle
+
+block content 
+	section.section-test 
+		.container
+			.content
+				.list-v
+					h1 Title h1 
+					h2 Title h2
+					h3 Title h3
+					h4 Title h4
+					p This is origin text
+					small This is subtext
+				.list-h
+					button.btn.btn-primary(type="button") Primary 
+					button.btn.btn-secondary(type="button") Secondary 
+					button.btn.btn-accent(type="button") Accent 
+					button.btn.btn-light(type="button") Light
+					button.btn.btn-dark(type="button") Dark
+				.list-h
+					button.btn.btn-dark(type="button" data-modal-open="#modal-1") Open modal 1 
+					button.btn.btn-dark(type="button" data-modal-open="#modal-2") Open modal 2 

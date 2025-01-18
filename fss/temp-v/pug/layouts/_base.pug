@@ -1,0 +1,15 @@
+include ../includes/_config.pug
+include ../includes/_includes.pug
+
+doctype html
+html(lang="ru")
+	head
+		include ../includes/_head.pug
+	body(data-layout=layoutBase)
+		.app
+			include ../components/_header.pug
+			main
+				block content
+			include ../components/_footer.pug
+		include ../components/_modals.pug
+		include ../includes/_scripts.pug

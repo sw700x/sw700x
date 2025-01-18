@@ -1,0 +1,40 @@
+@use "sass:math";
+@use "sass:map";
+@use "sass:meta";
+
+@use "_config" as config;
+
+@function strip-unit($value) {
+  @if meta.type-of($value) == "number" and math.unit($value) != "" {
+    @return math.div($value, ($value * 0 + 1));
+  }
+
+  @return $value;
+}
+
+@function size(
+  $min-size,
+  $max-size,
+  $min-width: map.get(config.$breakpoints, "sm"),
+  $max-width: map.get(config.$breakpoints, "xl")
+) {
+  $size-difference: null;
+  $width-difference: $max-width - $min-width;
+
+  @if math.unit($max-size) == "rem" or math.unit($min-size) == "rem" {
+    $size-difference: ($max-size - $min-size) * config.$fs-html;
+  } @else {
+    $size-difference: $max-size - $min-size;
+  }
+
+  @return clamp(
+    $min-size,
+    (100vw - $min-width) / strip-unit($width-difference) *
+      strip-unit($size-difference) + $min-size,
+    $max-size
+  );
+}
+
+@function line-height($font-size, $ratio: 1.2) {
+  @return calc($font-size * $ratio);
+}

@@ -1,0 +1,27 @@
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+[data-layout="base"] {
+  .app {
+    flex-direction: column;
+
+    header,
+    footer {
+      flex: 0 0 auto;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+  }
+}
+
+[data-layout="minimal"] {
+  .app {
+    align-items: center;
+    justify-content: center;
+  }
+}

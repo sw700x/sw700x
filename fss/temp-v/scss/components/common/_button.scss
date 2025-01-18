@@ -1,0 +1,57 @@
+@use "../../abstracts/_variables" as vars;
+@use "../../abstracts/_mixins" as mix;
+
+.btn {
+  @include mix.reset;
+  border-radius: vars.$radius-4-8;
+  padding: vars.$gap-6-8 vars.$gap-18-24;
+  font-size: vars.$fs-16-18;
+  line-height: vars.$lh-16-18;
+  cursor: pointer;
+  @include mix.transition(background, color);
+
+  &.btn-primary {
+    background: vars.$color-primary;
+    color: vars.$color-background-primary;
+
+    @include mix.hover {
+      background: darken($color: vars.$color-primary, $amount: 10%);
+    }
+  }
+
+  &.btn-secondary {
+    background: vars.$color-secondary;
+    color: vars.$color-background-primary;
+
+    @include mix.hover {
+      background: darken($color: vars.$color-secondary, $amount: 10%);
+    }
+  }
+
+  &.btn-accent {
+    background: vars.$color-accent;
+    color: vars.$color-background-primary;
+
+    @include mix.hover {
+      background: darken($color: vars.$color-accent, $amount: 10%);
+    }
+  }
+
+  &.btn-light {
+    background: vars.$color-muted;
+    color: vars.$color-text-primary;
+
+    @include mix.hover {
+      background: darken($color: vars.$color-muted, $amount: 10%);
+    }
+  }
+
+  &.btn-dark {
+    background: vars.$color-text-primary;
+    color: vars.$color-background-primary;
+
+    @include mix.hover {
+      background: lighten($color: vars.$color-text-primary, $amount: 10%);
+    }
+  }
+}

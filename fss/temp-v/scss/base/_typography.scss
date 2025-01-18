@@ -1,0 +1,41 @@
+@use "../abstracts/_variables" as vars;
+@use "../abstracts/_mixins" as mix;
+
+h1,
+.h1 {
+  font-size: vars.$fs-48-72;
+  line-height: vars.$lh-48-72;
+  font-weight: 600;
+}
+
+h2,
+.h2 {
+  font-size: vars.$fs-32-48;
+  line-height: vars.$lh-32-48;
+  font-weight: 600;
+}
+
+h3,
+.h3 {
+  font-size: vars.$fs-24-32;
+  line-height: vars.$lh-24-32;
+  font-weight: 600;
+}
+
+h4,
+.h4 {
+  font-size: vars.$fs-18-24;
+  line-height: vars.$lh-18-24;
+  font-weight: 600;
+}
+
+small,
+.small {
+  font-size: vars.$fs-12-14;
+  line-height: vars.$lh-12-14;
+  color: vars.$color-text-secondary;
+}
+
+a {
+  @include mix.transition(color);
+}

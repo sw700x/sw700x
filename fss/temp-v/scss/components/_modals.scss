@@ -1,0 +1,65 @@
+@use "../abstracts/_variables" as vars;
+@use "../abstracts/_mixins" as mix;
+@use "../abstracts/config" as config;
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow-y: auto;
+  background: rgba(vars.$color-dark, 0.25);
+  visibility: hidden;
+  opacity: 0;
+  @include mix.transition(opacity, transform);
+
+  &.is-visible {
+    z-index: 100;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-window {
+    padding: vars.$gap-48-96 config.$container-indent;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-content {
+    width: 100%;
+    max-width: 576px;
+    border-radius: vars.$radius-12-24;
+    background-color: vars.$color-white;
+    box-shadow: 0 4px 12px rgba(vars.$color-dark, 0.25);
+
+    .modal-head {
+      padding: vars.$gap-12-24;
+      border-bottom: 1px solid vars.$color-muted;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: vars.$gap-12-24;
+    }
+
+    .modal-body {
+      padding: vars.$gap-24-48;
+      display: flex;
+      flex-direction: column;
+      gap: vars.$gap-12-24;
+    }
+
+    .modal-footer {
+      padding: vars.$gap-12-24;
+      border-top: 1px solid vars.$color-muted;
+      display: flex;
+      justify-content: flex-end;
+      gap: vars.$gap-12-24;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@use "_functions" as func;
+
+$fs-12-14: func.size(0.75rem, 0.875rem);
+$fs-14-16: func.size(0.875rem, 1rem);
+$fs-16-18: func.size(1rem, 1.125rem);
+$fs-18-24: func.size(1.125rem, 1.5rem);
+$fs-24-32: func.size(1.5rem, 2rem);
+$fs-32-48: func.size(2rem, 3rem);
+$fs-48-72: func.size(3rem, 4.5rem);
+
+$lh-12-14: func.line-height($fs-12-14, 1.7);
+$lh-14-16: func.line-height($fs-12-14, 1.6);
+$lh-16-18: func.line-height($fs-16-18, 1.5);
+$lh-18-24: func.line-height($fs-18-24, 1.4);
+$lh-24-32: func.line-height($fs-24-32, 1.3);
+$lh-32-48: func.line-height($fs-32-48, 1.2);
+$lh-48-72: func.line-height($fs-48-72, 1.1);
+
+$ls: func.size(0.01em, 0.05em);
+
+$gap-6-8: func.size(0.375rem, 0.5rem);
+$gap-8-12: func.size(0.5rem, 0.75rem);
+$gap-12-18: func.size(0.75rem, 1.125rem);
+$gap-16-18: func.size(1rem, 1.125rem);
+$gap-12-24: func.size(0.75rem, 1.5rem);
+$gap-18-24: func.size(1.125rem, 1.5rem);
+$gap-24-48: func.size(1.5rem, 3rem);
+$gap-48-96: func.size(3rem, 6rem);
+
+$radius-4-8: func.size(0.25rem, 0.5rem);
+$radius-8-12: func.size(0.5rem, 0.75rem);
+$radius-12-24: func.size(0.75rem, 1.5rem);
+
+$icon-8-12: func.size(0.5rem, 0.75rem);
+$icon-12-16: func.size(0.75rem, 1rem);
+$icon-16-24: func.size(1rem, 1.5rem);
+
+$charcoal: #212121;
+$gray: #989ea3;
+$gray-light: #e2e2e2;
+$blue-violet: #8a2be2;
+$red: #f63874;
+$yellow: #f3ee66;
+$green: #28a745;
+$cyan: #5de17b;
+$white: #ffffff;
+$lime-green: #5de17b;
+$soft-gold: #f2c989;
+$purple: #8a2be2;
+
+$color-dark: $charcoal;
+$color-primary: $purple;
+$color-secondary: $lime-green;
+$color-accent: $soft-gold;
+$color-muted: $gray-light;
+$color-white: $white;
+
+$color-text-primary: $charcoal;
+$color-text-secondary: $gray;
+$color-text-muted: $gray-light;
+
+$color-background-primary: $white;
+$color-background-secondary: $gray-light;
+
+$color-success: $green;
+$color-danger: $red;
+$color-warning: $yellow;
+$color-info: $cyan;

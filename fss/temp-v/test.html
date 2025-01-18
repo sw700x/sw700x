@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="public/favicon/favicon-dark.ico" type="image/x-icon" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="public/favicon/favicon-light.ico" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Project name | Test</title>
+  </head>
+  <body data-layout="base">
+    <div class="app">
+      <header>
+        <div class="container">
+          <p>Header</p>
+        </div>
+      </header>
+      <main>
+        <section class="section-test"> 
+          <div class="container">
+            <div class="content">
+              <div class="list-v">
+                <h1>Title h1 </h1>
+                <h2>Title h2</h2>
+                <h3>Title h3</h3>
+                <h4>Title h4</h4>
+                <p>This is origin text</p><small>This is subtext</small>
+              </div>
+              <div class="list-h">
+                <button class="btn btn-primary" type="button">Primary </button>
+                <button class="btn btn-secondary" type="button">Secondary </button>
+                <button class="btn btn-accent" type="button">Accent </button>
+                <button class="btn btn-light" type="button">Light</button>
+                <button class="btn btn-dark" type="button">Dark</button>
+              </div>
+              <div class="list-h">
+                <button class="btn btn-dark" type="button" data-modal-open="#modal-1">Open modal 1 </button>
+                <button class="btn btn-dark" type="button" data-modal-open="#modal-2">Open modal 2 </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer> 
+        <div class="container">
+          <p>Footer</p>
+        </div>
+      </footer>
+    </div>
+    <div class="modal" id="modal-1">
+      <div class="modal-window">
+        <div class="modal-content">
+          <div class="modal-head">
+            <h2>Modal 1</h2>
+            <button class="btn btn-light btn-modal-close" type="button">Close</button>
+          </div>
+          <div class="modal-body">
+            <p>Modal content</p>
+            <p>Modal content</p>
+            <p>Modal content </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-light btn-modal-close" type="button">Close</button>
+            <button class="btn btn-dark btn-modal-close" type="button">Action</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-2">
+      <div class="modal-window">
+        <div class="modal-content">
+          <div class="modal-head">
+            <h2>Modal 2</h2>
+            <button class="btn btn-light btn-modal-close" type="button">Close</button>
+          </div>
+          <div class="modal-body">
+            <p>Modal content</p>
+            <p>Modal content</p>
+            <p>Modal content </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt sapiente fuga. Commodi illum corporis, ex reiciendis ullam, vel tempora doloremque eligendi ducimus modi, corrupti delectus qui error necessitatibus minus quod animi non doloribus saepe praesentium. Voluptatibus, vitae quasi fugit dolorum rem, laborum nemo fugiat culpa architecto ex ut ratione dolor quisquam consequuntur? Ab accusantium quas, incidunt eos accusamus officiis ipsa natus voluptatibus provident tenetur dolore iure velit optio rem totam quo magnam consequuntur odit repellat asperiores recusandae dolor! Quod sit quo modi eius accusantium distinctio aut pariatur dolorum neque, impedit delectus soluta iure recusandae aliquam dignissimos atque numquam quas!</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-light btn-modal-close" type="button">Close</button>
+            <button class="btn btn-dark btn-modal-close" type="button">Action</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

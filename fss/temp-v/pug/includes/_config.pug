@@ -1,0 +1,24 @@
+-
+	var layoutBase = 'base'
+	var layoutMinimal = 'minimal'
+
+	var projectName = 'Project name'
+
+	var pageTitle = (title) => {
+		return projectName + ' | ' + title
+	}
+
+	var pages = {
+		test: {
+			title: 'Test',
+			fullTitle: pageTitle("Test"),
+		},
+		main: {
+			title: 'Home',
+			fullTitle: pageTitle("Home"),
+		},
+		about: {
+			title: 'About us',
+			fullTitle: pageTitle("About us"),
+		}
+	}

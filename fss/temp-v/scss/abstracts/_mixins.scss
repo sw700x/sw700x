@@ -1,0 +1,61 @@
+@use "sass:map";
+
+@use "_variables" as vars;
+@use "_config" as config;
+
+@mixin container($max-width, $indent) {
+  max-width: $max-width;
+  padding: 0 $indent;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@mixin size-box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin media($type, $device) {
+  $breakpoint: map.get(config.$breakpoints, $device);
+
+  @if $breakpoint == null {
+    @warn "Unknown breakpoint #{$device}.";
+  } @else if $type == "max" {
+    @media (max-width: $breakpoint) {
+      @content;
+    }
+  } @else if $type == "min" {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown media type #{$type}. Use 'max' or 'min'.";
+  }
+}
+
+@mixin transition($properties...) {
+  $result: ();
+
+  @each $property in $properties {
+    $result: append(
+      $result,
+      $property config.$transition-time config.$transition-type,
+      comma
+    );
+  }
+
+  transition: $result;
+}
+
+@mixin hover($properties...) {
+  @include media("min", "xl") {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin reset {
+  all: unset;
+  box-sizing: border-box;
+}

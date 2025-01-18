@@ -1,0 +1,6 @@
+@use "../abstracts/variables" as vars;
+
+header {
+  padding: vars.$gap-12-24 0;
+  background: vars.$color-background-secondary;
+}
