@@ -6,8 +6,8 @@
 
 ---
 
-- [Шаблон](./temp-v/)
-- [Стили для фреймворков](./temp-f/)
+- [temp](https://github.com/sw700x/temp)
+- [temp-scss](https://github.com/sw700x/temp-scss)
 
 ---
 
