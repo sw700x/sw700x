@@ -19,7 +19,7 @@
 
 **Сетевые технологии**
 
-![Axios](https://img.shields.io/badge/-Axios-5A29E4?logo=axios&logoColor=white&style=flat-square) ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?logo=graphql&logoColor=white&style=flat-square) ![REST API](https://img.shields.io/badge/-REST%20API-FF6C37?style=flat-square) ![WebSocket](https://img.shields.io/badge/-WebSocket-00C853?logo=websocket&logoColor=white&style=flat-square)
+![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?logo=graphql&logoColor=white&style=flat-square) ![REST API](https://img.shields.io/badge/-REST%20API-FF6C37?style=flat-square) ![WebSocket](https://img.shields.io/badge/-WebSocket-00C853?logo=websocket&logoColor=white&style=flat-square)
 
 **Состояние и управление**
 
